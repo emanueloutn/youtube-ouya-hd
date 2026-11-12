@@ -6,10 +6,10 @@ Parche comunitario **no oficial** para la aplicación antigua de YouTube de OUYA
 
 ## Descargar e instalar
 
-Descarga **YouTube-OUYA-HD60-experimental.apk** desde [Releases](https://github.com/emanueloutn/youtube-ouya-hd/releases).
+Descarga **YouTube-OUYA-HD60-0.1.1-alpha.apk** desde [Releases](https://github.com/emanueloutn/youtube-ouya-hd/releases).
 
 1. Transfiere la APK a la OUYA e instálala.
-2. Abre **YouTube OUYA HD60**. Se instala como una aplicación separada; conserva YouTube original.
+2. Busca el icono en **MAKE → Software** y abre **YouTube OUYA HD60**. La versión del parche 0.1.1 corrige su incorporación al menú al instalarla. Se instala como una aplicación separada; conserva YouTube original.
 3. Selecciona invitado o inicia sesión si lo deseas. La copia no incluye las cuentas de la aplicación original.
 4. Reproduce un vídeo y abre Ajustes → Calidad. Selecciona 1080p cuando esté disponible.
 
@@ -54,3 +54,4 @@ También puedes ayudar reportando fallos con resolución, frecuencia de cuadros,
 Es una modificación experimental de software de terceros, no una aplicación original escrita desde cero. Las marcas y componentes pertenecen a sus respectivos titulares y mantienen sus condiciones; no se ofrece una licencia MIT sobre la APK completa. Consulta [NOTICE.md](NOTICE.md).
 
 English: unofficial experimental compatibility patch for the legacy OUYA YouTube app. Enables compatible H.264/AAC playback up to 1080p60. Intermittent stalls and audio interruptions remain under investigation. See the release notes before installing.
+

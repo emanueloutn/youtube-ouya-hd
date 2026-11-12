@@ -1,4 +1,5 @@
 import pathlib,zipfile,struct,hashlib,zlib,shlex,json
+from launcher_manifest import remove_ouya_category
 import argparse
 p=argparse.ArgumentParser(description='Parche experimental local para YouTube OUYA HD60')
 p.add_argument('--input',required=True,type=pathlib.Path)
@@ -93,7 +94,7 @@ def axml(raw):
  result=b[:pos]+pool+b[pos+size:];struct.pack_into('<I',result,4,len(result))
  return result
 with zipfile.ZipFile(a.input) as zin:
- dex,changes=patch_dex(zin.read('classes.dex'));manifest=axml(zin.read('AndroidManifest.xml'))
+ dex,changes=patch_dex(zin.read('classes.dex'));manifest=remove_ouya_category(axml(zin.read('AndroidManifest.xml')))
  with zipfile.ZipFile(ROOT/'youtube-hd60-unsigned.apk','w',compression=zipfile.ZIP_DEFLATED) as zout:
   for info in zin.infolist():
    if info.filename.upper().startswith('META-INF/'):continue
@@ -101,6 +102,7 @@ with zipfile.ZipFile(a.input) as zin:
    zout.writestr(info,data)
 (ROOT/'Cambios-tecnicos-HD60.json').write_text(json.dumps({'package':NEW,'changes':changes},indent=2),encoding='utf-8')
 print('Clone construido:',NEW)
+
 
 
 

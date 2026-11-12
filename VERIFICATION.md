@@ -14,3 +14,5 @@ No se verificó audio por otra salida: no estaba disponible para el usuario. No 
 Vídeos utilizados:
 - Big Buck Bunny, Blender: https://www.youtube.com/watch?v=aqz-KE-bpKQ
 - Sintel, Blender: https://www.youtube.com/watch?v=eRsGyueVLvQ
+
+Actualización del parche 0.1.1 (11 de noviembre de 2026): se verificó el icono en MAKE → Software y el arranque con U después de instalar la actualización firmada con la misma clave. Solo cambió el manifiesto; DEX y biblioteca nativa son idénticos a la APK HD60 probada. El parche reproducible produce esos mismos archivos.
